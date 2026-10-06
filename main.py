@@ -7,8 +7,8 @@ file_name = "system_data.json"
 if __name__ == "__main__":
   client = APIClient()
 
-  users = client.get_users(10)
-  posts = client.get_posts(10)
+  users = client.get_users()
+  posts = client.get_posts()
 
   all_data = users + posts
 
